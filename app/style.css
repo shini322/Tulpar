@@ -277,7 +277,7 @@ a {
 
 .hero {
   padding-bottom: 57px;
-  background-image: url(../images/hero/bg.jpg);
+  background-image: url(images/hero/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -1205,7 +1205,7 @@ a {
           align-items: center;
   padding: 42px 15px;
   margin-top: 49px;
-  background-image: url(../images/special-price/bg.jpg);
+  background-image: url(images/special-price/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
