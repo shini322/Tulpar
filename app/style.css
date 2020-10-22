@@ -940,6 +940,44 @@ a {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
 
+.check {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #1FE049;
+  border-radius: 50%; }
+  .check__icon {
+    width: 15px;
+    height: 12px;
+    fill: #fff; }
+
+.close {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #FF1626;
+  border-radius: 50%; }
+  .close__icon {
+    width: 15px;
+    height: 12px;
+    fill: #fff; }
+
 .hero {
   padding-bottom: 57px;
   background-image: url(images/hero/bg.jpg);
@@ -3198,3 +3236,55 @@ a {
   @media (max-width: 550px) {
     .home-owner__request {
       margin-bottom: 15px; } }
+
+.compare-prices__inner {
+  margin-top: 100px; }
+
+.compare-prices__table-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 93px auto 0;
+  padding: 0 15px; }
+  @media (max-width: 1200px) {
+    .compare-prices__table-container {
+      overflow-x: scroll; } }
+  @media (max-width: 1024px) {
+    .compare-prices__table-container {
+      margin-top: 50px; } }
+
+.compare-prices__table {
+  width: 100%;
+  border-spacing: 0;
+  vertical-align: middle; }
+  @media (max-width: 1200px) {
+    .compare-prices__table {
+      width: 1200px; } }
+
+.compare-prices__tr {
+  text-align: left; }
+  .compare-prices__tr:first-child .compare-prices__th {
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: none; }
+  .compare-prices__tr:last-child .compare-prices__td {
+    border-bottom: none; }
+
+.compare-prices__td {
+  padding: 20px 0;
+  width: 285px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6; }
+  .compare-prices__td:last-child {
+    border-right: none; }
+
+.compare-prices__th {
+  border-bottom: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  font-weight: 400; }
+  .compare-prices__th:first-child {
+    width: 251px; }
