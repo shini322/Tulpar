@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tulpar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="js/libs.min.js" defer></script>
     <script src="js/index.js" defer></script>
 </head>
@@ -390,8 +391,7 @@
                 </div>
                 
             </section>
-            <section class="special-price">
-                
+            <section class="special-price">                
                 <h2 class="special-price__title">
                     Нужен газобетон по специальной цене?
                 </h2>
@@ -415,27 +415,38 @@
                         Поэтому можем быть на 100% уверены за конечный результат
                     </h4>
                     <div class="manufacturers__item">
-                        <div class="manufacturers__logo">
-                            <div class="container">
-                                <img class="manufacturers__logo-img" src="images/company/3.png" alt="">
+                        <div class="container">
+                            <div class="manufacturers__header">
+                                <div class="manufacturers__logo">
+                                    <img class="manufacturers__logo-img" src="images/company/3.png" alt="">                                    
+                                </div>
+                                <div class="manufacturers__view">
+                                    <div class="manufacturers__view-text">
+                                        Вид:
+                                    </div>
+                                    <button class="manufacturers__view-item manufacturers__view-item--grid active">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid"><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
+                                    </button>
+                                    <button class="manufacturers__view-item manufacturers__view-item--row">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--row"><use xlink:href="images/sprite.svg#icon-row"></use></svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="manufacturers__row">
-                            <div class="container">
-                                <div class="manufacturers__wrapper">
-                                    <div class="manufacturers__container">
+                            <div class="manufacturers__bg-line" style="background-color: #FF1626;"></div>
+                            <div class="container swiper-container">
+                                <div class="manufacturers__wrapper swiper-wrapper">
+                                    <div class="manufacturers__container swiper-slide">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
-                                            <div class="manufacturer-item__sale">
-                                                SALE
-                                            </div>
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>                                            
                                             <div class="manufacturer-item__img-block">
                                                 <img class="manufacturer-item__img" src="images/manufacturer-item/1.png" alt="">
                                             </div>
                                             <div class="manufacturer-item__text-block">
-                                                <div class="manufacturer-item__title">
+                                                <h6 class="manufacturer-item__title">
                                                     Газобетонный блок Коттедж D600 625*200*250
-                                                </div>
+                                                </h6>
                                                 <div class="manufacturer-item__spec">
                                                     <div class="manufacturer-item__spec-title">
                                                         Характеристики
@@ -465,19 +476,19 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="manufacturers__container">
+                                    <div class="manufacturers__container swiper-slide">
                                         <div class="manufacturer-item">
                                             <img class="manufacturer-item__logo" src="images/company/3.png"/>
-                                            <div class="manufacturer-item__sale">
+                                            <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
                                                 SALE
                                             </div>
                                             <div class="manufacturer-item__img-block">
                                                 <img class="manufacturer-item__img" src="images/manufacturer-item/1.png" alt="">
                                             </div>
                                             <div class="manufacturer-item__text-block">
-                                                <div class="manufacturer-item__title">
+                                                <h6 class="manufacturer-item__title">
                                                     Газобетонный блок Коттедж D600 625*200*250
-                                                </div>
+                                                </h6>
                                                 <div class="manufacturer-item__spec">
                                                     <div class="manufacturer-item__spec-title">
                                                         Характеристики
@@ -507,19 +518,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="manufacturers__container">
+                                    <div class="manufacturers__container swiper-slide">
                                         <div class="manufacturer-item">
                                             <img class="manufacturer-item__logo" src="images/company/3.png"/>
-                                            <div class="manufacturer-item__sale">
-                                                SALE
-                                            </div>
+                                            
                                             <div class="manufacturer-item__img-block">
-                                                <img class="manufacturer-item__img" src="images/manufacturer-item/1.png" alt="">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/2.png" alt="">
                                             </div>
                                             <div class="manufacturer-item__text-block">
-                                                <div class="manufacturer-item__title">
-                                                    Газобетонный блок Коттедж D600 625*200*250
-                                                </div>
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Коттедж D600 625*100*250
+                                                </h6>
                                                 <div class="manufacturer-item__spec">
                                                     <div class="manufacturer-item__spec-title">
                                                         Характеристики
@@ -538,7 +547,7 @@
                                                                 Кол-во на поддоне, шт: 
                                                             </th>
                                                             <td class="product-item__specifications-td manufacturer-item__td">
-                                                                64
+                                                                32
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -551,16 +560,764 @@
                                     </div>
                                     
                                 </div>
-                                <a class="manufacturers__advertisinglink" href="#">
-                                    <img class="manufacturers__advertising" src="images/advertising/1.jpg" alt="">
-                                </a>
+                                <div class="manufacturers__slider-pagination"></div>
                             </div>
-                            
+                            <a class="manufacturers__advertising-link" href="#">
+                                <img class="manufacturers__advertising" src="images/advertising/1.jpg" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="manufacturers__item">
+                        <div class="container">
+                            <div class="manufacturers__header">
+                                <div class="manufacturers__logo">
+                                    <img class="manufacturers__logo-img" src="images/company/2.png" alt="">                                    
+                                </div>
+                                <div class="manufacturers__view">
+                                    <div class="manufacturers__view-text">
+                                        Вид:
+                                    </div>
+                                    <button class="manufacturers__view-item manufacturers__view-item--grid active">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid"><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
+                                    </button>
+                                    <button class="manufacturers__view-item manufacturers__view-item--row">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--row"><use xlink:href="images/sprite.svg#icon-row"></use></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manufacturers__row">
+                            <div class="manufacturers__bg-line" style="background-color: #224477;"></div>
+                            <div class="container swiper-container">
+                                <div class="manufacturers__wrapper swiper-wrapper">
+                                    <div class="manufacturers__container swiper-slide">
+                                        <div class="manufacturer-item">
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <div class="manufacturer-item__sticker manufacturer-item__sticker--new">
+                                                NEW
+                                            </div>
+                                            <div class="manufacturer-item__img-block">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/1.png" alt="">
+                                            </div>
+                                            <div class="manufacturer-item__text-block">
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Bikton D700
+                                                </h6>
+                                                <div class="manufacturer-item__spec">
+                                                    <div class="manufacturer-item__spec-title">
+                                                        Характеристики
+                                                    </div>
+                                                    <table class="product-item__specifications-table">
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка плотности:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                D400
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Морозостойкость, F:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                40
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка прочности:  
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                M-25
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn--red manufacturer-item__price">
+                                                    3200 руб.
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="manufacturers__container swiper-slide">
+                                        <div class="manufacturer-item">
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>                                            
+                                            <div class="manufacturer-item__img-block">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/1.png" alt="">
+                                            </div>
+                                            <div class="manufacturer-item__text-block">
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Bikton D700
+                                                </h6>
+                                                <div class="manufacturer-item__spec">
+                                                    <div class="manufacturer-item__spec-title">
+                                                        Характеристики
+                                                    </div>
+                                                    <table class="product-item__specifications-table">
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка плотности:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                D700
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Морозостойкость, F:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                75
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка прочности:  
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                M-35
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn--red manufacturer-item__price">
+                                                    3200 руб.
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="manufacturers__container swiper-slide">
+                                        <div class="manufacturer-item">
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>                                            
+                                            <div class="manufacturer-item__img-block">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/3.png" alt="">
+                                            </div>
+                                            <div class="manufacturer-item__text-block">
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Bikton D500
+                                                </h6>
+                                                <div class="manufacturer-item__spec">
+                                                    <div class="manufacturer-item__spec-title">
+                                                        Характеристики
+                                                    </div>
+                                                    <table class="product-item__specifications-table">
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка плотности:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                D600
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Морозостойкость, F:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                50
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка прочности:  
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                M-35
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn--red manufacturer-item__price">
+                                                    3200 руб.
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="manufacturers__slider-pagination"></div>
+                            </div>
+                            <a class="manufacturers__advertising-link" href="#">
+                                <img class="manufacturers__advertising" src="images/advertising/2.jpg" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="manufacturers__item">
+                        <div class="container">
+                            <div class="manufacturers__header">
+                                <div class="manufacturers__logo">
+                                    <img class="manufacturers__logo-img" src="images/company/5.png" alt="">                                    
+                                </div>
+                                <div class="manufacturers__view">
+                                    <div class="manufacturers__view-text">
+                                        Вид:
+                                    </div>
+                                    <button class="manufacturers__view-item manufacturers__view-item--grid active">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid"><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
+                                    </button>
+                                    <button class="manufacturers__view-item manufacturers__view-item--row">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--row"><use xlink:href="images/sprite.svg#icon-row"></use></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manufacturers__row">
+                            <div class="manufacturers__bg-line" style="background-color: rgba(252, 214, 6, 0.83);"></div>
+                            <div class="container swiper-container">
+                                <div class="manufacturers__wrapper swiper-wrapper">
+                                    <div class="manufacturers__container swiper-slide">
+                                        <div class="manufacturer-item">
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
+                                                SALE
+                                            </div>
+                                            <div class="manufacturer-item__img-block">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/4.png" alt="">
+                                            </div>
+                                            <div class="manufacturer-item__text-block">
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Коттедж D600 625*200*250
+                                                </h6>
+                                                <div class="manufacturer-item__spec">
+                                                    <div class="manufacturer-item__spec-title">
+                                                        Характеристики
+                                                    </div>
+                                                    <table class="product-item__specifications-table">
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка плотности:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                D600
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Кол-во на поддоне, шт: 
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                64
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn--red manufacturer-item__price">
+                                                    3000 руб.
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="manufacturers__container swiper-slide">
+                                        <div class="manufacturer-item">
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
+                                                SALE
+                                            </div>
+                                            <div class="manufacturer-item__img-block">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/4.png" alt="">
+                                            </div>
+                                            <div class="manufacturer-item__text-block">
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Коттедж D600 625*200*250
+                                                </h6>
+                                                <div class="manufacturer-item__spec">
+                                                    <div class="manufacturer-item__spec-title">
+                                                        Характеристики
+                                                    </div>
+                                                    <table class="product-item__specifications-table">
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка плотности:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                D600
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Кол-во на поддоне, шт: 
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                64
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn--red manufacturer-item__price">
+                                                    3000 руб.
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="manufacturers__container swiper-slide">
+                                        <div class="manufacturer-item">
+                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
+                                                SALE
+                                            </div>
+                                            <div class="manufacturer-item__img-block">
+                                                <img class="manufacturer-item__img" src="images/manufacturer-item/2.png" alt="">
+                                            </div>
+                                            <div class="manufacturer-item__text-block">
+                                                <h6 class="manufacturer-item__title">
+                                                    Газобетонный блок Коттедж D600 625*200*250
+                                                </h6>
+                                                <div class="manufacturer-item__spec">
+                                                    <div class="manufacturer-item__spec-title">
+                                                        Характеристики
+                                                    </div>
+                                                    <table class="product-item__specifications-table">
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Марка плотности:
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                D600
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="product-item__specifications-tr">
+                                                            <th class="product-item__specifications-th">
+                                                                Кол-во на поддоне, шт: 
+                                                            </th>
+                                                            <td class="product-item__specifications-td manufacturer-item__td">
+                                                                64
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn--red manufacturer-item__price">
+                                                    3000 руб.
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="manufacturers__slider-pagination"></div>
+                            </div>
+                            <a class="manufacturers__advertising-link" href="#">
+                                <img class="manufacturers__advertising" src="images/advertising/3.jpg" alt="">
+                            </a>
                         </div>
                         
                     </div>
                 </div>
                 
+            </section>
+            <section class="help">
+                <div class="help__inner">
+                    <h2 class="help__title">
+                        Нужна помощь в выборе <br>
+                         газобетонных блоков ?
+                    </h2>
+                    <h4 class="help__subtitle">
+                        Оставьте контактные данные, и наш менеджер <br>
+                        свяжется с вами в ближайшее время и ответит на все интересующие вас вопросы
+                    </h4>
+                    <form class="help__form" action="#">
+                        <input class="input help__input" type="text" name="name" placeholder="Имя">
+                        <input class="input help__input" type="text" name="phone" placeholder="Телефон">
+                        <button class="btn btn--red help__submit" type="submit">
+                            Получить консультацию
+                        </button>
+                    </form>
+                    <img class="help__img-bg" src="images/help/bg-img.png" alt="">
+                </div>
+            </section>
+            <section class="economy-mode">
+                <div class="economy-mode__inner">
+                    <h2 class="economy-mode__title">
+                        ВКЛЮЧИТЬ ЭКОНОМНЫЙ РЕЖИМ
+                    </h2>
+                    <a class="economy-mode__btn" href="#" data-economy-mode></a>
+                </div>
+            </section>
+            <section class="low-price">
+                <div class="low-price__inner">
+                    <div class="low-price__img-block">
+                        <img class="low-price__img" src="images/low-price/1.png" alt="">
+                    </div>
+                    <div class="low-price__text-block">
+                        <h4 class="low-price__title">
+                            Тулпар гарантирует самую низкую цену на рынке
+                        </h4>
+                        <p class="low-price__desc">
+                            Наша компания более 8 лет на рынке, 
+                            мы работаем с заводами на эксклюзивных условиях и это даёт возможность продавать по самым привлекательным ценам
+                        </p>
+                        <p class="low-price__order">
+                            Оставьте заявку и убедитесь в этом сами
+                        </p>
+                        <form class="form-item low-price__form-item">
+                            <input class="form-item__input" type="text" placeholder="Телефон" required>
+                            <button class="form-item__submit" type="submit">
+                                <svg class="form-item__icon form-item__icon--arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="order-stage">
+                <div class="order-stage__inner">
+                    <h2 class="section-title order-stage__title">
+                        Наши менеджеры будут сопровождать вас на всех этапах 
+                        <div class="section-title__red-line order-stage__red-line">заказа</div>    
+                    </h2>
+                    <h4 class="section-subtitle order-stage__subtitle">
+                        Мы глубоко погружены в тонкости логистики и знаем все <br> проблемы изнутри.
+                    </h4>
+                    <div class="order-stage__btns-nav">
+                        <div class="order-stage__btn-nav order-stage__btn-nav--prev">
+                            <svg class="order-stage__btn-icon"><use xlink:href="images/sprite.svg#icon-arrow-slider-left"></use></svg>
+                        </div>
+                        <div class="order-stage__btn-nav order-stage__btn-nav--next">
+                            <svg class="order-stage__btn-icon"><use xlink:href="images/sprite.svg#icon-arrow-slider-right"></use></svg>
+                        </div>
+                    </div>
+                    <div class="order-stage__container swiper-container">                        
+                        <div class="order-stage__wrapper swiper-wrapper">
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/1.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            1
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Принимаем вашу заявку 
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/2.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            2
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Консультация по телефону
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/3.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            3
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Отправка первичного коммерческого предложения
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/4.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            4
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Сравнительный анализ разных производителей
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/5.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            5
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Расчёт стоимости, сроков доставки <br>
+                                            и разгрузки
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/6.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            6
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Конечное
+                                            коммерческое 
+                                            предложение
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/7.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            7
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Получение
+                                            оплаты
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/8.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            8
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Бронирование товара 
+                                            на складе
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/9.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            9
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Доставка
+                                            и разгрузка
+                                            товара 
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="order-stage__slide swiper-slide">
+                                <div class="order-stage__item" style="background-image: url(images/order-stages/10.jpg);">
+                                    <div class="order-stage__text-block">
+                                        <div class="order-stage__number">
+                                            10
+                                        </div>
+                                        <div class="order-stage__content">
+                                            Подписание
+                                            закрывающих
+                                            договоров
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <section class="video-section">
+                <div class="video-section__inner">
+                    <h2 class="video-section__title">
+                        Узнать больше о нас в этом видео 
+                    </h2>
+                    <div class="video-more__link-container video-section__link-container">                        
+                        <svg class="video-more__icon-arrow-right video-section__icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-video-right"></use></svg>
+                        <a class="video-more__link video-section__link" href="#">
+                            <svg class="video-more__icon-play video-section__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="price-graph">
+                <div class="price-graph__inner">
+                    <h2 class="section-title price-graph__title">
+                        Цены в Тулпар ниже 
+                        <div class="section-title__red-line price-graph__red-line">чем у других компаний </div>   
+                    </h2>
+                    <h4 class="section-subtitle price-graph__subtitle">
+                        Оцените масштаб нашей работы 
+                    </h4>
+                    <div class="price-graph__wrapper">
+                        <aside class="price-graph__aside">
+                            <div class="graph-aside-item price-graph__aside-item">
+                                <div class="graph-aside-item__img-block">
+                                    <img class="graph-aside-item__img" src="images/manufacturer-item/1.png" alt="">
+                                    <div class="graph-aside-item__product-name">
+                                        Газобетон
+                                    </div>
+                                </div>
+                                
+                                <div class="graph-aside-item__text-block">
+                                    <p class="graph-aside-item__text">
+                                        Мы более 7 лет на рынке поэтому 
+                                        мы можем гарантировать, что у нас только самый качественный продукт
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="graph-aside-item price-graph__aside-item">
+                                <div class="graph-aside-item__img-block">
+                                    <img class="graph-aside-item__img" src="images/manufacturer-item/1.png" alt="">
+                                    <div class="graph-aside-item__product-name">
+                                        U-блоки
+                                    </div>
+                                </div>
+                                
+                                <div class="graph-aside-item__text-block">
+                                    <p class="graph-aside-item__text">
+                                        Мы более 7 лет на рынке поэтому 
+                                        мы можем гарантировать, что у нас только самый качественный продукт
+                                    </p>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="graph">
+                            <div class="graph__wrapper">
+                                <div class="graph__inner">
+                                    <div class="graph__item">
+                                        <div class="graph__value">
+                                            2012
+                                        </div>
+                                        <div class="graph__scale" style="width: 10%;"></div>
+                                    </div>
+                                    <div class="graph__item">
+                                        <div class="graph__value">
+                                            2015
+                                        </div>
+                                        <div class="graph__scale" style="width: 40%;"></div>
+                                    </div>
+                                    <div class="graph__item">
+                                        <div class="graph__value">
+                                            2020
+                                        </div>
+                                        <div class="graph__scale" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                                <div class="graph__line-container">
+                                    <svg class="graph__line"><use xlink:href="images/sprite.svg#icon-graph-line"></use></svg>
+                                    <div class="graph__line-text">
+                                        <div class="graph__line-value graph__line-value--start">
+                                            0
+                                        </div>
+                                        <div class="graph__line-value graph__line-value--end">
+                                            285674 м3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="low-price-form">
+                <div class="low-price-form__inner">
+                    <div class="low-price-form__content">
+                        <h2 class="low-price-form__title">
+                            Столько продукции не производит ни одна компания, поэтому цены <br> очень  низкие
+                        </h2>
+                        <h4 class="low-price-form__subtitle">
+                            Отправьте заявку и убедитесь в этом сами
+                        </h4>
+                        <form class="form-item low-price-form__form-item">
+                            <input class="form-item__input" type="text" placeholder="Телефон" required>
+                            <button class="form-item__submit" type="submit">
+                                <svg class="form-item__icon form-item__icon--arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg>
+                            </button>
+                        </form>
+                    </div>
+                    <img class="low-price-form__img" src="images/low-price-form/1.png" alt="">
+                </div>
+            </section>
+            <section class="material">
+                <div class="material__inner">
+                    <div class="material__header">
+                        <h2 class="material__title">
+                            У нас есть материал подходящий для вас
+                        </h2>
+                        <div class="material__wrapper">
+                            <h4 class="material__subtitle">
+                                Чтобы не ошибиться в подборе материала оставьте заявку
+                            </h4>
+                            <form class="form-item material__form-item">
+                                <input class="form-item__input" type="text" placeholder="Телефон" required>
+                                <button class="form-item__submit" type="submit">
+                                    <svg class="form-item__icon form-item__icon--arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="material__container swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="material-item swiper-slide">
+                                <div class="material-item__img-block">
+                                    <img class="material-item__img" src="images/material/1.png" alt="">
+                                </div>
+                                <div class="material-item__text-block">
+                                    <h6 class="material-item__name">
+                                        Газобетонный блок D400 с утеплителем и облицовочным кирпичом
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="material-item swiper-slide">
+                                <div class="material-item__img-block">
+                                    <img class="material-item__img" src="images/material/2.png" alt="">
+                                </div>
+                                <div class="material-item__text-block">
+                                    <h6 class="material-item__name">
+                                        Газобетонный блок D500 с облицовочным кирпичом и без утеплителя
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="material-item swiper-slide">
+                                <div class="material-item__img-block">
+                                    <img class="material-item__img" src="images/material/3.png" alt="">
+                                </div>
+                                <div class="material-item__text-block">
+                                    <h6 class="material-item__name">
+                                        Газобетонный блок D600 без утеплителя и облицовочного кирпичи
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material__slider-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="gas-blocks">
+                <div class="gas-blocks__inner">
+                    <h2 class="section-title">
+                        <div class="section-title__red-line">Газоблоки Тулпар уже в домах наших клиентов</div>   
+                    </h2>
+                    <h4 class="section-subtitle ">
+                        Дома, построенные из нашего газоблока
+                    </h4>
+                    <div class="gas-blocks__slider">
+                        <div class="gas-blocks__container swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="gas-blocks__item swiper-slide">
+                                    <img class="gas-blocks__img" src="images/gas-blocks/1.jpg" alt="">
+                                </div>
+                                <div class="gas-blocks__item swiper-slide">
+                                    <img class="gas-blocks__img" src="images/gas-blocks/2.jpg" alt="">
+                                </div>
+                                <div class="gas-blocks__item swiper-slide">
+                                    <img class="gas-blocks__img" src="images/gas-blocks/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="gas-blocks__slider-pagination"></div>
+                            <div class="gas-blocks__navigation">
+                                <button class="gas-blocks__btn-nav gas-blocks__btn-nav--next"></button>
+                                <button class="gas-blocks__btn-nav gas-blocks__btn-nav--prev"></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
         </main>
         <footer class="footer"></footer>
@@ -743,6 +1500,31 @@
                 от передачи третьим лицам.
             </div>
         </form>
+    </div>
+    <div class="modal modal-ecomomy-mode">
+        <div class="modal-ecomomy-mode__body">
+            <img class="modal-ecomomy-mode__img" src="images/economy-mode/img-modal-1.png" alt="">
+            <div class="modal-ecomomy-mode__text-block">
+                <div class="modal-ecomomy-mode__timer">
+                    00:30
+                </div>
+                <div class="modal-ecomomy-mode__money">
+                    Минус 1000 рублей 
+                </div>
+                <div class="modal-ecomomy-mode__desc">
+                    КУПИ ГАЗОБЛОКИ ПОЛУЧИ 
+                    <span class="modal-ecomomy-mode__desc--red">КЛЕЙ</span> 
+                    И <span class="modal-ecomomy-mode__desc--red">БЕСПЛАТНУЮ ДОСТАВКУ</span> В ПОДАРОК
+                </div>
+                <form class="form-item modal-ecomomy-mode__form-item">
+                    <input class="form-item__input" type="text" placeholder="Телефон" required>
+                    <button class="form-item__submit" type="submit">
+                        <svg class="form-item__icon form-item__icon--arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg>
+                    </button>
+                </form>
+            </div>
+            <img class="modal-ecomomy-mode__img" src="images/economy-mode/img-modal-2.png" alt="">
+        </div>
     </div>
 </body>
 </html>

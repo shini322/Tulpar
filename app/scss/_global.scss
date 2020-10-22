@@ -40,6 +40,23 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.swiper-slide{
+    height: auto !important;
+}
+.swiper-pagination-bullets{
+    text-align: center;
+    .swiper-pagination-bullet{
+        width: 20px;
+        height: 7px;
+        background: rgba(34, 68, 119, 0.5);
+        border-radius: 20px;
+        transition: .3s;
+        &.swiper-pagination-bullet-active{
+            width: 40px;
+            background: $blue;
+        }
+    }
+}
 .wrapper{
     background: #FCFCFC;
 }
@@ -71,20 +88,21 @@ a{
 .form-item{
     position: relative;
     display: inline-flex;
-    align-items: center;
+    align-items: center;  
+    max-width: 262px;  
     @include for-md-mob{
         width: 100%;
         max-width: 290px;
     }
     &__input{
-        padding: 13.5px 15.74px;
+        padding: 12px 15.74px;
         padding-right: 68px;
-        max-width: 262px;
         width: 100%;
         border: 0.5px solid rgba(0, 0, 0, 0.12);
         background-color: $white;
         box-shadow: 15px 15px 15px rgba(180, 180, 180, 0.25);
         border-radius: 50px;
+        font-family: 'Open Sans', sans-serif;
         &::placeholder{
             color: rgba($color: #0C182B, $alpha: .5);
         }

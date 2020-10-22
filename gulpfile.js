@@ -21,6 +21,7 @@ gulp.task('css', function(){
     return gulp.src([
       'node_modules/wowjs/css/libs/animate.css',
       'node_modules/normalize.css/normalize.css',
+      'node_modules/swiper/swiper-bundle.min.css',
     ])
       .pipe(concat('_libs.scss'))
       .pipe(gulp.dest('app/scss'))
@@ -40,6 +41,7 @@ gulp.task('script', function(){
 gulp.task('js', function(){
     return gulp.src([        
         'node_modules/wowjs/dist/wow.min.js',
+        'node_modules/swiper/swiper-bundle.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
