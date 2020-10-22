@@ -1253,7 +1253,7 @@
                     </div>
                     <div class="material__container swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="material-item swiper-slide">
+                            <a class="material-item swiper-slide" href="#">
                                 <div class="material-item__img-block">
                                     <img class="material-item__img" src="images/material/1.png" alt="">
                                 </div>
@@ -1262,8 +1262,8 @@
                                         Газобетонный блок D400 с утеплителем и облицовочным кирпичом
                                     </h6>
                                 </div>
-                            </div>
-                            <div class="material-item swiper-slide">
+                            </a>
+                            <a class="material-item swiper-slide" href="#">
                                 <div class="material-item__img-block">
                                     <img class="material-item__img" src="images/material/2.png" alt="">
                                 </div>
@@ -1272,7 +1272,7 @@
                                         Газобетонный блок D500 с облицовочным кирпичом и без утеплителя
                                     </h6>
                                 </div>
-                            </div>
+                            </a>
                             <div class="material-item swiper-slide">
                                 <div class="material-item__img-block">
                                     <img class="material-item__img" src="images/material/3.png" alt="">
@@ -1291,7 +1291,7 @@
             <section class="gas-blocks">
                 <div class="gas-blocks__inner">
                     <h2 class="section-title">
-                        <div class="section-title__red-line">Газоблоки Тулпар уже в домах наших клиентов</div>   
+                        <div class="section-title__red-line">Газоблоки Тулпар уже в домах <br> наших клиентов</div>   
                     </h2>
                     <h4 class="section-subtitle ">
                         Дома, построенные из нашего газоблока
@@ -1309,16 +1309,37 @@
                                     <img class="gas-blocks__img" src="images/gas-blocks/3.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="gas-blocks__slider-pagination"></div>
-                            <div class="gas-blocks__navigation">
-                                <button class="gas-blocks__btn-nav gas-blocks__btn-nav--next"></button>
-                                <button class="gas-blocks__btn-nav gas-blocks__btn-nav--prev"></button>
+                            <div class="gas-blocks__nav-block"> 
+                                <button class="gas-blocks__btn-nav gas-blocks__btn-nav--prev">
+                                    <svg class="gas-blocks__btn-nav-icon"><use xlink:href="images/sprite.svg#icon-arrow-slider-left"></use></svg>
+                                </button>
+                                <div class="gas-blocks__slider-pagination"></div>
+                                <button class="gas-blocks__btn-nav gas-blocks__btn-nav--next">
+                                    <svg class="gas-blocks__btn-nav-icon"><use xlink:href="images/sprite.svg#icon-arrow-slider-right"></use></svg>
+                                </button>
                             </div>
                         </div>
                     </div>
                     
                 </div>
             </section>
+            <section class="home-owner">
+                <div class="home-owner__inner">
+                    <h2 class="home-owner__title">
+                        Хотите стать счастливым обладателем <br>  дома?
+                    </h2>
+                    <div class="home-owner__request">
+                        Оставьте заявку
+                    </div>
+                    <form class="form-item home-owner__form-item">
+                        <input class="form-item__input" type="text" placeholder="Телефон" required>
+                        <button class="form-item__submit" type="submit">
+                            <svg class="form-item__icon form-item__icon--arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section class="compare-prices"></section>
         </main>
         <footer class="footer"></footer>
     </div>

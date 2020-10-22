@@ -190,10 +190,17 @@ const gasBlocksSlider = new Swiper('.gas-blocks__container', {
     pagination:{
         el: '.gas-blocks__slider-pagination',
         type: 'bullets',
+        clickable: true,
     },
     navigation: {
         nextEl: '.gas-blocks__btn-nav--next',
         prevEl: '.gas-blocks__btn-nav--prev',
+    },
+    breakpoints:{
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
     },
 });
 

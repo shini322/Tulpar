@@ -1972,13 +1972,20 @@
 }
 
 .gas-blocks{
+    &__inner{
+        margin-top: 123px;
+    }
     &__slider{
         margin-top: 53px;
+        @include for-md-mob{
+            margin-top: 20px;
+        }
     }
     &__container{
-        padding: 34px 0;
+        padding: 34px 15px;
     }
     &__img{
+        display: block;
         max-width: 100%;
         transition: .3s;
     }
@@ -1986,10 +1993,99 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 221px;
         &.swiper-slide-active{
+            @include for-md-mob{
+                position: relative;
+                padding: 0 15px;
+                z-index: 10;
+            }
             .gas-blocks__img{
                 transform: scale(1.2);
+                @include for-md-mob{
+                    // transform: scale(1.1);
+                }
             }
+        }
+    }
+
+    &__nav-block{
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 59px;
+        height: 59px;
+        box-shadow: 15px 15px 15px rgba(180, 180, 180, 0.25);
+        border: 0.5px solid rgba(0, 0, 0, 0.2);
+        background-color: $white;
+        border-radius: 50%;
+        &--next{
+            margin-left: 20px;
+        }
+    }
+
+    &__slider-pagination{
+        .swiper-pagination-bullet{
+            width: 20px;
+            height: 20px;
+            box-shadow: 15px 15px 15px rgba(180, 180, 180, 0.25);
+            background: rgba(34, 68, 136, 0.1);
+            border: 0.5px solid rgba(0, 0, 0, 0.2);
+            margin-left: 20px;
+            &.swiper-pagination-bullet-active{
+                width: 20px;
+                height: 20px;
+                background-color: $blue; 
+            }
+        }
+
+    }
+
+    &__btn-nav-icon{
+        width: 13px;
+        height: 23px;
+        fill: $blue;
+    }
+}
+
+.home-owner{
+    &__inner{
+        margin-top: 100px;
+        padding: 48px 15px 26px 242px;
+        color: $white;
+        background-image: url(images/home-owner/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include for-md{
+            padding-left: 50px;
+            margin-top: 30px;
+        }
+        @include for-md-mob{
+            padding-left: 15px;
+        }
+    }
+    &__title{
+        margin-bottom: 8px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+        @include for-md-mob{
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+    &__request{
+        margin-bottom: 22px;
+        line-height: 23px;
+        @include for-md-mob{
+            margin-bottom: 15px;
         }
     }
 }
