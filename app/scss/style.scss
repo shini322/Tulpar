@@ -945,7 +945,7 @@
         align-items: center;
         font-size: 20px;
         line-height: 24px;
-        @include for-md{
+        @include for-sm{
             display: flex;
         }
     }
@@ -977,6 +977,9 @@
         }
         .container{
            display: flex; 
+           @include for-xl{
+               overflow: visible;
+           }
            @include for-md{
                 display: block;
             }
@@ -1370,6 +1373,7 @@
         max-width: 1074px;
         align-items: flex-start;
         @include for-md{
+            margin-top: 50px;
             padding: 0 14px;
             flex-direction: column;
         }
@@ -1463,6 +1467,9 @@
     }
     &__container{
         margin-top: 75px;
+        @include for-md{
+            margin-top: 50px;
+        }
         @include for-md-mob{
             margin-top: 49px;
         }
@@ -1539,6 +1546,9 @@
         justify-content: flex-end;
         >*+*{
             margin-left: 20px;
+        }
+        @include for-md{
+            margin-top: 0;
         }
         @include for-md-mob{
             display: none;
@@ -1802,8 +1812,8 @@
     &__line{
         height: 50px;
         width: 100%;     
-        @include for-sm{
-            height: 30px;
+        @include for-md-mob{
+            height: 25px;
         }   
 
     }

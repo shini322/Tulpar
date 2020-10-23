@@ -132,14 +132,14 @@ function manufaturersSlider(){
 
     }
 
-    getSlider();
-
-    window.addEventListener('resize', () => {
-        getSlider();
-    });
-
-    
+    getSlider();    
 }
+
+window.addEventListener('resize', () => {
+    if(window.innerWidth < 768){
+        manufaturersSlider();
+    }
+});
 
 manufaturersSlider();
 
