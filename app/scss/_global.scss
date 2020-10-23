@@ -58,7 +58,10 @@ a{
     }
 }
 .wrapper{
+    display: flex;
+    flex-direction: column;
     background: #FCFCFC;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1475px;
@@ -214,7 +217,7 @@ a{
     &__red-line{
         position: relative;
         display: inline-block;
-        @include for-md-mob{
+        @include for-sm{
             padding-bottom: 16px;
         }
         &:before, &::after{
@@ -230,13 +233,13 @@ a{
         }
         &:before{
             right: calc(100% + 32px);
-            @include for-md-mob{
+            @include for-sm{
                 display: none;
             }
         }
         &::after{
             left: calc(100% + 32px);
-            @include for-md-mob{
+            @include for-sm{
                 width: 117px;
                 left: 50%;
                 transform: translateX(-50%);
