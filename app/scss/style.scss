@@ -38,7 +38,7 @@
     }
     &__list{
         margin-top: 22px;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 35px;
         color: $white;
         @include for-md{
@@ -51,15 +51,15 @@
     }
     &__form-title{
         margin-bottom: 13px;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 34.97px;
         color: $white;
         @include for-md{
-            font-size: 20px;
+            font-size: 22px;
             line-height: 24px;
         }
         @include for-md-mob{
-            font-size: 15px;
+            font-size: 17px;
             line-height: 19px;
         }
     }
@@ -138,15 +138,15 @@
         @include for-md{
             flex-direction: column;
             align-items: flex-start;
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 300;
             line-height: 17.7px;
         }
     }
     li{
         position: relative;
-        font-size: 15px;
-        line-height: 19px;
+        font-size: 17px;
+        line-height: 20px;
         transition: .3s;
         @include for-md{
             &::before{
@@ -258,7 +258,7 @@
     }
     &__title{
         font-weight: 500;
-        font-size: 24px;
+        font-size: 26px;
         color: $white;
         @include for-md{
             display: none;
@@ -435,8 +435,8 @@
         line-height: 21px;
         @include for-sm{
             margin-top: 0;
-            font-size: 13px;
-            line-height: 17px;
+            font-size: 15px;
+            line-height: 19px;
         }
     }
 }
@@ -563,7 +563,10 @@
         padding: 0;
     }
     &__inner{
-        margin-top: 96px;
+        margin-top: 100px;
+        @include for-sm{
+            margin-top: 50px;
+        }
     }
     &__product-settings{
         margin-top: 50px;
@@ -1107,7 +1110,8 @@
         flex-direction: row;
         .manufacturer-item__title{
             padding: 0;
-            font-size: 13px;
+            font-size: 16px;
+            line-height: 20px;
             font-weight: 400;
             text-align: left;
         }
@@ -1126,13 +1130,16 @@
             margin-top: 5px;
         }
         .product-item__specifications-th{
-            font-size: 14px;
-            line-height: 18px;
+            font-size: 16px;
+            line-height: 20px;
         }
         .product-item__specifications-td{
             padding-left: 10px;
-            font-size: 14px;
-            line-height: 18px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .manufacturer-item__logo{
+            top: 10px;
         }
     }
     &__logo{
@@ -1176,7 +1183,7 @@
         margin-top: 16px;
     }
     &__spec-title{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         line-height: 23px;
         text-align: left;
@@ -2039,6 +2046,7 @@
 .material-item{
     position: relative;
     display: flex;
+    padding: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -2061,7 +2069,7 @@
        min-height: 227px;
     }
     &__name{
-        font-size: 15px;
+        font-size: 18px;
         line-height: 23px;
         text-align: center;
     }   
@@ -2361,13 +2369,13 @@
         fill: $red;
     }
     &__name{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         line-height: 25px;
     }
     &__text{
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 26px;
     }
     &__source-link{
         margin-top: 5px;
@@ -2569,7 +2577,7 @@
         line-height: 40px;
         text-align: center;
         @include for-md-mob{
-            font-size: 17px;
+            font-size: 20px;
             line-height: 24px;
         }
     }
@@ -2580,7 +2588,7 @@
         color: $red;
         text-decoration: underline;
         @include for-md-mob{
-            font-size: 17px;
+            font-size: 20px;
             line-height: 25px;
         }
         &:hover{
@@ -2641,12 +2649,14 @@
         margin-right: 30px;
         @include for-md-mob{
             margin: 0 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
        
     }
     &__title{
         margin-bottom: 32px;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 28px;
         font-weight: 700;
     }
@@ -2665,12 +2675,12 @@
     }
     &__item-title{
         margin-bottom: 4px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         line-height: 25px;
     }
     &__content{
-        font-size: 16px;
+        font-size: 18px;
         line-height: 25px;
     }
     a.contacts__content{
