@@ -293,6 +293,8 @@ a{
     }
  }
 
+
+
  .animate-graph-scale{
      animation: graphscale linear 1.5s;
  }
@@ -303,5 +305,22 @@ a{
      }
      100%{
          width: 100%;
+     }
+ }
+
+ .arrow-animate{
+     animation: arrow linear 1s;
+     animation-iteration-count:infinite;
+ }
+
+ @keyframes arrow {
+     0%{
+         transform: translateX(0);
+     }
+     50%{
+        transform: translateX(15px);
+     }
+     100%{
+        transform: translateX(0); 
      }
  }

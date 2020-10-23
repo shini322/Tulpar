@@ -115,7 +115,7 @@
                             Узнать больше о нас в этом видео 
                         </h3>
                         <div class="video-more__link-container">                        
-                            <svg class="video-more__icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-video-right"></use></svg>
+                            <svg class="video-more__icon-arrow-right arrow-animate"><use xlink:href="images/sprite.svg#icon-arrow-video-right"></use></svg>
                             <a class="video-more__link" href="#">
                                 <svg class="video-more__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
                             </a>
@@ -179,7 +179,7 @@
                                     <img class="features-item__img" src="images/features/delivery.svg" alt="">
                                 </div>
                                 <h5 class="features-item__title">
-                                    Короткие <br>
+                                    Короткие 
                                     сроки <br>
                                     доставки
                                 </h5>
@@ -243,22 +243,22 @@
                             Поэтому гарантируем высокое качество продукции и своевременную доставку на объект
                         </h4>
                         <div class="company-list wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
-                            <div class="company-list__item">
+                            <div class="company-list__item" data-company="Грас">
                                 <img class="company-list__img" src="images/company/1.png" alt="">
                             </div>
-                            <div class="company-list__item">
+                            <div class="company-list__item" data-company="Bikton">
                                 <img class="company-list__img" src="images/company/2.png" alt="">
                             </div>
-                            <div class="company-list__item">
+                            <div class="company-list__item active" data-company="Коттедж">
                                 <img class="company-list__img" src="images/company/3.png" alt="">
                             </div>
-                            <div class="company-list__item">
+                            <div class="company-list__item" data-company="Uniblock">
                                 <img class="company-list__img" src="images/company/4.png" alt="">
                             </div>
-                            <div class="company-list__item">
+                            <div class="company-list__item" data-company="Теплон">
                                 <img class="company-list__img" src="images/company/5.png" alt="">
                             </div>
-                            <div class="company-list__item">
+                            <div class="company-list__item" data-company="КамгэсЗЯБ">
                                 <img class="company-list__img" src="images/company/6.png" alt="">
                             </div>
                         </div>
@@ -350,7 +350,10 @@
                                     </div> 
                                     <div class="product-item__leftside">                                    
                                         <div class="product-item__title">
-                                            Газобетонный блок Коттедж D600 625*200*250
+                                            <span class="product-item__title--type">U-образный блок</span>                                             
+                                            <span class="product-item__title--manufacturer">Коттедж</span>                                             
+                                            <span class="product-item__title--mark">D300</span>                                             
+                                            <span class="product-item__title--size">625*200*250</span>  
                                         </div> 
                                         <div class="product-item__min-for-order">
                                             Минимальное кол-во для покупки - <span class="product-item__min-for-order-item">1</span> поддон
@@ -369,8 +372,8 @@
                                                     <th class="product-item__specifications-th">
                                                         Марка плотности:
                                                     </th>
-                                                    <td class="product-item__specifications-td">
-                                                        D600
+                                                    <td class="product-item__specifications-td product-item__specifications-td--mark">
+                                                        D300
                                                     </td>
                                                 </tr>
                                                 <tr class="product-item__specifications-tr">
@@ -427,10 +430,10 @@
                                     <div class="manufacturers__view-text">
                                         Вид:
                                     </div>
-                                    <button class="manufacturers__view-item manufacturers__view-item--grid active">
-                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid"><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
+                                    <button class="manufacturers__view-item manufacturers__view-item--grid">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid "><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
                                     </button>
-                                    <button class="manufacturers__view-item manufacturers__view-item--row">
+                                    <button class="manufacturers__view-item manufacturers__view-item--row active">
                                         <svg class="manufacturers__view-icon manufacturers__view-icon--row"><use xlink:href="images/sprite.svg#icon-row"></use></svg>
                                     </button>
                                 </div>
@@ -580,10 +583,10 @@
                                     <div class="manufacturers__view-text">
                                         Вид:
                                     </div>
-                                    <button class="manufacturers__view-item manufacturers__view-item--grid active">
-                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid"><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
+                                    <button class="manufacturers__view-item manufacturers__view-item--grid">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid "><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
                                     </button>
-                                    <button class="manufacturers__view-item manufacturers__view-item--row">
+                                    <button class="manufacturers__view-item manufacturers__view-item--row active">
                                         <svg class="manufacturers__view-icon manufacturers__view-icon--row"><use xlink:href="images/sprite.svg#icon-row"></use></svg>
                                     </button>
                                 </div>
@@ -595,7 +598,7 @@
                                 <div class="manufacturers__wrapper swiper-wrapper">
                                     <div class="manufacturers__container swiper-slide wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <img class="manufacturer-item__logo" src="images/company/2.png"/>
                                             <div class="manufacturer-item__sticker manufacturer-item__sticker--new">
                                                 NEW
                                             </div>
@@ -645,7 +648,7 @@
                                     </div>
                                     <div class="manufacturers__container swiper-slide wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>                                            
+                                            <img class="manufacturer-item__logo" src="images/company/2.png"/>                                            
                                             <div class="manufacturer-item__img-block">
                                                 <img class="manufacturer-item__img" src="images/manufacturer-item/1.png" alt="">
                                             </div>
@@ -692,7 +695,7 @@
                                     </div>
                                     <div class="manufacturers__container swiper-slide wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>                                            
+                                            <img class="manufacturer-item__logo" src="images/company/2.png"/>                                            
                                             <div class="manufacturer-item__img-block">
                                                 <img class="manufacturer-item__img" src="images/manufacturer-item/3.png" alt="">
                                             </div>
@@ -756,10 +759,10 @@
                                     <div class="manufacturers__view-text">
                                         Вид:
                                     </div>
-                                    <button class="manufacturers__view-item manufacturers__view-item--grid active">
-                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid"><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
+                                    <button class="manufacturers__view-item manufacturers__view-item--grid">
+                                        <svg class="manufacturers__view-icon manufacturers__view-icon--grid "><use xlink:href="images/sprite.svg#icon-grid"></use></svg>
                                     </button>
-                                    <button class="manufacturers__view-item manufacturers__view-item--row">
+                                    <button class="manufacturers__view-item manufacturers__view-item--row active">
                                         <svg class="manufacturers__view-icon manufacturers__view-icon--row"><use xlink:href="images/sprite.svg#icon-row"></use></svg>
                                     </button>
                                 </div>
@@ -771,7 +774,7 @@
                                 <div class="manufacturers__wrapper swiper-wrapper">
                                     <div class="manufacturers__container swiper-slide wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <img class="manufacturer-item__logo" src="images/company/5.png"/>
                                             <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
                                                 SALE
                                             </div>
@@ -813,7 +816,7 @@
                                     </div>
                                     <div class="manufacturers__container swiper-slide wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <img class="manufacturer-item__logo" src="images/company/5.png"/>
                                             <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
                                                 SALE
                                             </div>
@@ -855,7 +858,7 @@
                                     </div>
                                     <div class="manufacturers__container swiper-slide wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                         <div class="manufacturer-item">
-                                            <img class="manufacturer-item__logo" src="images/company/3.png"/>
+                                            <img class="manufacturer-item__logo" src="images/company/5.png"/>
                                             <div class="manufacturer-item__sticker manufacturer-item__sticker--sale">
                                                 SALE
                                             </div>
@@ -1128,7 +1131,7 @@
                     </h2>
                     <div class="video-more__link-container video-section__link-container">                        
                         <svg class="video-more__icon-arrow-right video-section__icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-video-right"></use></svg>
-                        <a class="video-more__link video-section__link" href="#">
+                        <a class="video-more__link video-section__link" target="_blank" href="https://www.youtube.com/watch?v=-nfcl8Y-yDo&t=28s">
                             <svg class="video-more__icon-play video-section__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
                         </a>
                     </div>
@@ -1481,7 +1484,7 @@
                             <div class="reviews__wrapper swiper-wrapper wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <div class="reviews__item swiper-slide">
                                     <div class="reviews__video-container">
-                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/hTWKbfoikeg" data-video>
+                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/77jb9NJV85w" data-video>
                                             <img class="reviews__item-overlay" src="images/reviews/1.jpg" alt="">
                                             <svg class="reviews__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
                                         </a>
@@ -1499,12 +1502,14 @@
                                             опалечен для зимнего хранения. Хочу так же отметить, что привезли 
                                             в закрытой фуре и все кирпичи как будто с конвеера. Ставлю 5+.
                                         </p>
-                                        <img class="reviews__source" src="images/yandex.png" alt="">
+                                        <a class="reviews__source-link" href="#">
+                                            <img class="reviews__source" src="images/yandex.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="reviews__item swiper-slide">
                                     <div class="reviews__video-container">
-                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/hTWKbfoikeg" data-video>
+                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/77jb9NJV85w" data-video>
                                             <img class="reviews__item-overlay" src="images/reviews/1.jpg" alt="">
                                             <svg class="reviews__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
                                         </a>
@@ -1522,12 +1527,14 @@
                                             опалечен для зимнего хранения. Хочу так же отметить, что привезли 
                                             в закрытой фуре и все кирпичи как будто с конвеера. Ставлю 5+.
                                         </p>
-                                        <img class="reviews__source" src="images/yandex.png" alt="">
+                                        <a class="reviews__source-link" href="#">
+                                            <img class="reviews__source" src="images/google.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="reviews__item swiper-slide">
                                     <div class="reviews__video-container">
-                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/hTWKbfoikeg" data-video>
+                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/77jb9NJV85w" data-video>
                                             <img class="reviews__item-overlay" src="images/reviews/1.jpg" alt="">
                                             <svg class="reviews__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
                                         </a>
@@ -1545,7 +1552,34 @@
                                             опалечен для зимнего хранения. Хочу так же отметить, что привезли 
                                             в закрытой фуре и все кирпичи как будто с конвеера. Ставлю 5+.
                                         </p>
-                                        <img class="reviews__source" src="images/yandex.png" alt="">
+                                        <a class="reviews__source-link" href="#">
+                                            <img class="reviews__source" src="images/2gis.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__video-container">
+                                        <a class="reviews__video-block" href="https://www.youtube.com/embed/77jb9NJV85w" data-video>
+                                            <img class="reviews__item-overlay" src="images/reviews/1.jpg" alt="">
+                                            <svg class="reviews__icon-play"><use xlink:href="images/sprite.svg#icon-play"></use></svg>
+                                        </a>
+                                    </div>
+                                    <div class="reviews__text-block">
+                                        <svg class="reviews__icon-qoutes"><use xlink:href="images/sprite.svg#icon-qoutes"></use></svg>
+                                        <div class="reviews__name">
+                                            Сергей Андреев
+                                        </div>
+                                        <p class="reviews__text">
+                                            Заказал весной на ответ хранение, как и договаривались 
+                                            привезли в сентябре. При закупке на логистику озвучивали одну цену, 
+                                            а при доставке оказалось меньше, что приятно удивило. Привезли 
+                                            за 200 км в срок назначенного времени, а так же каждый поддон 
+                                            опалечен для зимнего хранения. Хочу так же отметить, что привезли 
+                                            в закрытой фуре и все кирпичи как будто с конвеера. Ставлю 5+.
+                                        </p>
+                                        <a class="reviews__source-link" href="#">
+                                            <img class="reviews__source" src="images/2gis.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1702,12 +1736,7 @@
                 </section>
                 <div class="map wow slideInRight" data-wow-duration="0.8s" data-wow-delay="0s">
                     <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa5b2ab24f9dd5bb6e4b65228e49a9263f42c11f16a23e4efc8b5edb91009e82f&amp;source=constructor" width="713" height="525" frameborder="0"></iframe>
-                    <div class="present map__present">
-                        <img class="present__img" src="images/present.png" alt="">
-                        <a class="btn btn--red present__btn" href="#" data-present>
-                            Получить подарок
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
         </main>
@@ -2104,6 +2133,12 @@
                 <iframe class="modal-review-video__iframe" width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-    </div>    
+    </div> 
+    <div class="present map__present">
+        <img class="present__img" src="images/present.png" alt="">
+        <a class="btn btn--red present__btn" href="#" data-present>
+            Получить подарок
+        </a>
+    </div>   
 </body>
 </html>

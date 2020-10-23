@@ -96,6 +96,27 @@ function manufaturersSlider(){
                     view = slider.querySelector('.manufacturers__view'),
                     manufacturersItems = slider.querySelectorAll('.manufacturer-item'),
                     manufacturersWrapper = slider.querySelector('.manufacturers__wrapper');
+
+                    if(viewGrid.classList.contains('active')){
+                        swiper = new Swiper(container,{
+                            spaceBetween: 15,                   
+                            pagination: {
+                                el: pagination,
+                                type: 'bullets',
+                            },
+                        }); 
+                        manufacturersItems.forEach(item => {
+                            item.classList.remove('row');
+                            manufacturersWrapper.classList.remove('row');
+                        })
+                    } else {
+                        swiper.destroy();
+                        manufacturersItems.forEach(item => {
+                            item.classList.add('row');
+                            manufacturersWrapper.classList.add('row');
+                        })
+                    }
+                    
                     view.addEventListener('click', (e) => {
                         const target = e.target;
                         const viewBtn = target.closest('.manufacturers__view-item');
@@ -187,6 +208,7 @@ const gasBlocksSlider = new Swiper('.gas-blocks__container', {
     spaceBetween: 10,
     slidesPerView: 3,
     centeredSlides: true,
+    loop: true,
     pagination:{
         el: '.gas-blocks__slider-pagination',
         type: 'bullets',
@@ -280,14 +302,12 @@ const reviewVideoLink = document.querySelectorAll('[data-video]'),
 
 modal('[data-video]', '.modal-review-video');
 
+
+// Graph animation
+
 const graphScale = document.querySelectorAll('.graph__scale');
 
 graphScale.forEach(item => {
-    // window.addEventListener('scroll', () => {
-    //     if(window.scrollTop > item.offset){
-            
-    //     }
-    // });
     $(window).scroll(function(){
         if ( $(this).scrollTop() > item.offsetTop - 200 ) {
             item.classList.add('animate-graph-scale');
@@ -296,5 +316,69 @@ graphScale.forEach(item => {
 });
 
 
+// Company list selection
+
+const companyItem = document.querySelectorAll('.company-list__item'),
+      productManufacturer = document.querySelector('.product-item__manufacturer-item'),
+      productTitleManufacturer = document.querySelector('.product-item__title--manufacturer');
+companyItem.forEach(item => {
+    item.addEventListener('click', (e) => {
+        const company = e.currentTarget;
+        companyItem.forEach(item => item.classList.remove('active'));
+        company.classList.add('active');
+        productManufacturer.textContent = company.dataset.company;
+        productTitleManufacturer.textContent = company.dataset.company;
+    });
+});
+
+
+// Offer download
+
+const offerDownloadLink = document.querySelector('.offer__download'),
+      offerInput = document.querySelector('.offer__input'),
+      offerForm = document.querySelector('.offer__form');
+offerDownloadLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(offerInput.value){
+        offerForm.submit();
+    }
+});
+
+//Present
+
+const present = document.querySelector('.map__present');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 200) {
+            present.classList.add('fixed');
+        }
+    });
+
+//Product item form
+
+function productItemUpdate(){
+    const settingChoose = document.querySelectorAll('.product-settings__container'),
+          markChoose = document.querySelectorAll('.product-settings__radio-btns--mark'),
+          productTitleType = document.querySelector('.product-item__title--type'),          
+          productTitleMark = document.querySelector('.product-item__title--mark'),
+          productSettingsMark = document.querySelector('.product-item__specifications-td--mark');
+    settingChoose.forEach(item => {
+        item.addEventListener('click', (e) => {
+            const target = e.target;
+            const setting = target.closest('.product-settings__label');
+            const type = target.closest('.product-settings__container--type');
+            const mark = target.closest('.product-settings__container--mark');
+            if(setting){
+                if(type){
+                    productTitleType.textContent = setting.textContent;
+                } else{
+                    productTitleMark.textContent = setting.textContent;
+                    productSettingsMark.textContent = setting.textContent;
+                } 
+            }
+        });
+    });
+}
+
+productItemUpdate()
 
 });

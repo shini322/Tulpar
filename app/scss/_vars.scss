@@ -6,6 +6,9 @@ $green:#1FE049;
 $blue: #224488;
 $yellow: #FCD606;
 
+@mixin for-xxl {
+  @media (max-width: 1700px) { @content; }
+}
 @mixin for-xl {
     @media (max-width: 1450px) { @content; }
   }
