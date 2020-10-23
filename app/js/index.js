@@ -280,4 +280,21 @@ const reviewVideoLink = document.querySelectorAll('[data-video]'),
 
 modal('[data-video]', '.modal-review-video');
 
+const graphScale = document.querySelectorAll('.graph__scale');
+
+graphScale.forEach(item => {
+    // window.addEventListener('scroll', () => {
+    //     if(window.scrollTop > item.offset){
+            
+    //     }
+    // });
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > item.offsetTop - 200 ) {
+            item.classList.add('animate-graph-scale');
+        }
+    });
+});
+
+
+
 });

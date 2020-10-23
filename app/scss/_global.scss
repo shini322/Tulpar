@@ -292,3 +292,16 @@ a{
         fill: $white;
     }
  }
+
+ .animate-graph-scale{
+     animation: graphscale linear 1.5s;
+ }
+
+ @keyframes graphscale{
+     0%{
+         width: 0;
+     }
+     100%{
+         width: 100%;
+     }
+ }

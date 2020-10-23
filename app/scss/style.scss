@@ -425,9 +425,7 @@
         visibility: visible;
         opacity: 1;        
     }
-    @include for-sm{
-        align-items: flex-start; 
-    }
+
 }
 
 .modal-features{
@@ -972,6 +970,7 @@
     &__row{
         position: relative;
         display: flex;
+        padding-top: 1px;
         @include for-md{
             display: block;
         }
@@ -1096,6 +1095,12 @@
     &__text-block{
         display: flex;
         flex-direction: column;
+        @include for-md{
+            width: 50%;
+        }
+        @include for-md-mob{
+            width: auto;
+        }
     }
     &__title{
         padding: 0 36px ;
@@ -1799,6 +1804,7 @@
         }
     }
     &__scale{
+        width: 100%;
         height: 142px;
         background-color: #86ABC9;
         border-radius: 0 15px 15px 0;
@@ -2213,7 +2219,7 @@
         position: relative;
         padding: 35px 68px 84px 35px;
         @include for-md{
-            padding: 35px 0 39px 41px;
+            padding: 35px 0 39px 0;
         }
         &:before, &:after{
             content: '';
@@ -2366,6 +2372,12 @@
             @include for-lg{
                 display: inline;
             }
+            
+        }
+        &:before{
+            @include for-sm{
+                display: none;
+            }
         }
     }
     &__container{
@@ -2480,7 +2492,7 @@
             left: -43px;
         }
         @include for-md-mob{
-            padding: 51px 20px 51px;
+            padding: 30px 20px;
         }
     }
     &__title{
@@ -2536,6 +2548,9 @@
     padding-top: 100px;
     @include for-lg{
         flex-direction: column;
+    }
+    @include for-md{
+        padding-top: 50px;
     }
 }
 
@@ -2675,7 +2690,6 @@
 }
 
 .footer{
-
     margin-top: 93px;
     padding: 54px 171px 44px 169px;
     background-color: #0A192F;
@@ -2684,6 +2698,9 @@
     }
     @include for-lg{
         padding: 20px 40px;
+    }
+    @include for-md{
+        margin-top: 50px;
     }
     &__logo{
         width: auto;
@@ -2969,5 +2986,26 @@
         @include for-md-mob{
             display: block;
         }
+    }
+}
+
+.modal-review-video{
+    &__inner{
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+    }
+    &__wrapper{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+    }
+    &__iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }

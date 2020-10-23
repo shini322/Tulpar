@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tulpar</title>
+    <!--Styles-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="template_style.css">
+    <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="js/libs.min.js" defer></script>
     <script src="js/index.js" defer></script>
@@ -1180,19 +1183,19 @@
                                         <div class="graph__value">
                                             2012
                                         </div>
-                                        <div class="graph__scale wow slideInLeft" style="width: 10%;" data-wow-duration="0.8s" data-wow-delay="0s"></div>
+                                        <div class="graph__scale " style="max-width: 10%;"></div>
                                     </div>
                                     <div class="graph__item">
                                         <div class="graph__value">
                                             2015
                                         </div>
-                                        <div class="graph__scale wow slideInLeft" style="width: 40%;" data-wow-duration="0.8s" data-wow-delay=".5s"></div>
+                                        <div class="graph__scale " style="max-width: 40%;"></div>
                                     </div>
                                     <div class="graph__item">
                                         <div class="graph__value">
                                             2020
                                         </div>
-                                        <div class="graph__scale wow slideInLeft" style="width: 100%;" data-wow-duration="0.8s" data-wow-delay="1s"></div>
+                                        <div class="graph__scale " style="max-width: 100%;"></div>
                                     </div>
                                 </div>
                                 <div class="graph__line-container">
@@ -2096,8 +2099,11 @@
         </div>
     </div>
     <div class="modal modal-review-video">
-        <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
+        <div class="modal-review-video__inner">
+            <div class="modal-review-video__wrapper">
+                <iframe class="modal-review-video__iframe" width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
