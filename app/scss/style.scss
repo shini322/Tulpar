@@ -161,7 +161,6 @@
                 transform: translateY(-50%);
             }
             &:hover{
-                
                 transform: translateX(26px);
                 color: $blue;
                 &:before{
@@ -182,6 +181,7 @@
         }
     }
     a{
+        position: relative;
         padding-bottom: 1px;
         border-bottom: 1px solid transparent;
         transition: .3s;
@@ -1038,6 +1038,7 @@
         }
         .container{
            display: flex; 
+           padding: 0 15px 30px;
            @include for-xl{
                overflow: visible;
            }
@@ -1070,7 +1071,10 @@
         }
     }
     &__item{
-        margin-top: 40px;
+        margin-top: 20px;
+        @include for-md{
+            margin-top: 0;
+        }
     }
     &__advertising-link{
         position: relative;
@@ -1166,7 +1170,7 @@
         display: flex;
         flex-direction: column;
         @include for-md{
-            width: 50%;
+            // width: 50%;
         }
         @include for-md-mob{
             width: auto;
@@ -1320,7 +1324,10 @@
             text-align: center;
         }
     }
-    &__btn{
+    &__input{
+        display: none;
+    }
+    &__toggle{
         position: relative;
         margin-left: 61px;
         box-shadow: 15px 15px 15px rgba(180, 180, 180, 0.25);
@@ -1345,12 +1352,7 @@
                 width: 22.28px;
             }
         }
-        &:hover{
-            &:before{
-                left: auto;
-                right: -1px;
-            }
-        }
+        
         @include for-md{
             margin-top: 5px;
             margin-left: 0;
@@ -1358,6 +1360,12 @@
         @include for-md-mob{
             width: 34px;
             height: 16.25px;
+        }
+    }
+    &__input:checked + &__toggle{
+        &:before{
+            left: auto;
+            right: -1px;
         }
     }
 }
@@ -1580,10 +1588,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px 0 100px;
+        padding: 0 20px 0 110px;
         width: 100%;
         height: 100%;
         z-index: 10;
+        @include for-md{
+            padding-left: 80px;
+        }
         @include for-md-mob{
             flex-direction: column;
             padding: 0 10px;
@@ -1591,6 +1602,12 @@
     }
     &__content{
         text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        @include for-md{
+            font-size: 16px;
+            line-height: 20px;
+        }
         @include for-md-mob{
             padding: 0;
             font-weight: 700;
@@ -1607,6 +1624,11 @@
         left: 40px;
         top: 50%;
         transform: translateY(-50%);
+        @include for-md{
+            font-size: 80px;
+            line-height: 85px;
+            left: 20px;
+        }
         @include for-md-mob{
             position: relative;
             font-size: 40px;

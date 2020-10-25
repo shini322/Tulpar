@@ -39,7 +39,9 @@ function modal(openTrigger, modalBlock) {
         modal = document.querySelector(modalBlock);
     modalTrigger.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            e.preventDefault();
+            if(!btn.classList.contains('economy-mode__toggle')){
+                e.preventDefault();
+            }
             openModal(modalBlock)
         });
     });
