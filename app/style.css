@@ -5037,22 +5037,99 @@ a {
   @media (max-width: 768px) {
     .graph {
       max-width: 100%; } }
-  .graph__wrapper {
-    padding: 35px 12px 15px 60px;
+  .graph__inner {
+    width: 100%;
     border: 2px dashed #e5e5e5;
     overflow: hidden; }
     @media (max-width: 768px) {
-      .graph__wrapper {
-        padding: 20px 12px 15px 20px; } }
-    @media (max-width: 550px) {
-      .graph__wrapper {
-        padding-left: 8px;
-        padding-right: 5px; } }
-  .graph__inner {
-    padding-right: 45px; }
-    @media (max-width: 768px) {
       .graph__inner {
-        padding-right: 30px; } }
+        -webkit-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%; } }
+  .graph__wrapper {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto; }
+    @media (max-width: 1024px) {
+      .graph__wrapper {
+        width: 100%; } }
+    @media (max-width: 768px) {
+      .graph__wrapper {
+        height: 400px;
+        width: 400px; } }
+    .graph__wrapper > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+      .graph__wrapper > div::before {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        top: 5px; }
+      @media (max-width: 768px) {
+        .graph__wrapper > div {
+          -webkit-transform: scale(0.8) translate(-50%, -50%);
+              -ms-transform: scale(0.8) translate(-50%, -50%);
+                  transform: scale(0.8) translate(-50%, -50%);
+          -webkit-transform-origin: -20% 0;
+              -ms-transform-origin: -20% 0;
+                  transform-origin: -20% 0; } }
+      .graph__wrapper > div:first-child {
+        width: 400px !important;
+        height: 400px !important; }
+        .graph__wrapper > div:first-child::before {
+          content: '2012';
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          top: 10px;
+          font-size: 36px;
+          font-weight: 700; }
+        .graph__wrapper > div:first-child canvas {
+          width: 400px !important;
+          height: 400px !important; }
+      .graph__wrapper > div:nth-child(2) {
+        width: 300px !important;
+        height: 300px !important; }
+        .graph__wrapper > div:nth-child(2) canvas {
+          width: 300px !important;
+          height: 300px !important; }
+        .graph__wrapper > div:nth-child(2)::before {
+          content: '2015';
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          top: 5px;
+          font-size: 28px;
+          font-weight: 700; }
+      .graph__wrapper > div:nth-child(3) {
+        width: 220px !important;
+        height: 220px !important; }
+        .graph__wrapper > div:nth-child(3) canvas {
+          width: 220px !important;
+          height: 220px !important; }
+        .graph__wrapper > div:nth-child(3)::before {
+          content: '2020';
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          top: 3px;
+          font-size: 20px;
+          font-weight: 700; }
+  .graph__dial {
+    font-size: 0 !important; }
   .graph__item {
     display: -webkit-box;
     display: -ms-flexbox;

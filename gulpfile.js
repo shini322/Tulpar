@@ -42,6 +42,7 @@ gulp.task('js', function(){
     return gulp.src([        
         'node_modules/wowjs/dist/wow.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
+        'node_modules/jquery-knob/js/jquery.knob.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

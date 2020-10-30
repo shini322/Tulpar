@@ -381,6 +381,8 @@ function productItemUpdate(){
     });
 }
 
-productItemUpdate()
+productItemUpdate();
+
+$(".graph__dial").knob();
 
 });

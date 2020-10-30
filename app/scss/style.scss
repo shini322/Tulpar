@@ -1853,23 +1853,97 @@
     @include for-sm{
         max-width: 100%;
     }
-    &__wrapper{
-        padding: 35px 12px 15px 60px;
+    &__inner{
+        width: 100%;
         border: 2px dashed #e5e5e5;  
         overflow: hidden;
         @include for-sm{
-            padding: 20px 12px 15px 20px;
-        }
-        @include for-md-mob{
-            padding-left: 8px;
-            padding-right: 5px;
+            // transform: scale(0.7);
+            transform-origin: 50% 50%;
         }
     }
-    &__inner{
-        padding-right: 45px;
-        @include for-sm{
-            padding-right: 30px;
+    &__wrapper{
+        position: relative;
+        height: 600px;
+        width: 600px;
+        margin: 0 auto;
+        @include for-md{
+            width: 100%;
         }
+        @include for-sm{
+            height: 400px;
+            width: 400px;
+        }
+        & > div{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            &::before{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 5px;
+            }
+            @include for-sm{
+                transform: scale(0.8) translate(-50%, -50%);
+                transform-origin: -20% 0;
+            }
+            &:first-child{
+                width: 400px !important;
+                height: 400px !important;
+                &::before{
+                    content: '2012';
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 10px;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+                canvas{
+                    width: 400px !important;
+                    height: 400px !important;
+                }
+            }
+            &:nth-child(2){
+                width: 300px !important;
+                height: 300px !important;
+                canvas{
+                    width: 300px !important;
+                    height: 300px !important;
+                }
+                &::before{
+                    content: '2015';
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 5px;
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+            }
+            &:nth-child(3){
+                width: 220px !important;
+                height: 220px !important;
+                canvas{
+                    width: 220px !important;
+                    height: 220px !important;
+                }
+                &::before{
+                    content: '2020';
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 3px;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__dial{
+        font-size: 0 !important;
     }
     &__item{
         display: flex;
